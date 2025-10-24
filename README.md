@@ -1,8 +1,8 @@
 Design a cv application to enforece the learning of the componets and jsx and how to style it;
 	also learning what props to pass and how to use them and when to use state isntead of props
 	also learning how to manage basic state between components and such..
-APP -> FOOTER, MAIN
-	FOOTER -> LOGO, EXPORT
+APP -> NAV, MAIN 			==== done
+	NAV -> LOGO, EXPORT ==== done
 	MAIN -> FORMS, PREVIEW
 			FORMS -> GENERAL INFO, EDUCATION, EXPERIENCE
 			PREVIEW -> GENERAL INFO, EDUCATION, EXPERIENCE
