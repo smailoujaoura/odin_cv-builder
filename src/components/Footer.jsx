@@ -10,11 +10,11 @@ const NavStyle = {
   borderBottom: '2px solid #E4EBF2'
 };
 
-export default function Nav() {
+export default function Nav({onDownload}) {
 	return (
     <div style={NavStyle}>
       <Logo />
-      <Export />
+      <Export onClick={onDownload}/>
     </div>
   );
 }

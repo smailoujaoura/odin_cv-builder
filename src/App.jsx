@@ -1,7 +1,9 @@
 // import './App.css'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Nav from './components/Footer'
 import Main from './components/Main'
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 const AppStyle = {
   display: 'flex',
@@ -11,10 +13,27 @@ const AppStyle = {
 };
 
 function App() {
+  const previewRef = useRef();
+
+  const downloadPdf = async () => {
+    if (!previewRef) {
+      return
+    }
+    const canvas = await html2canvas(previewRef.current, {scale: 2});
+    const imgData = canvas.toDataURL("image/png");
+
+    const pdf = new jsPDF("p", "mm", "a4");
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+    pdf.save("preview.pdf");
+  };
+
   return (
     <div style={AppStyle}>
-      <Nav />
-      <Main />
+      <Nav onDownload={downloadPdf} />
+      <Main previewRef={previewRef} />
     </div>
   )
 }

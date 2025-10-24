@@ -9,7 +9,6 @@ const PreviewStyle = {
   flex: '1 1',
   borderRadius: '10px',
   padding: '20px',
-  
 }
 
 const GeneralStyle = {
@@ -79,11 +78,7 @@ function Experience({experience}) {
             <p style={{opacity: '95%'}}>{exp.role}</p>
             <p style={{opacity: '80%'}}>{exp.start} - {exp.finish}</p>
             <div style={{display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-start'}}>
-              {
-                exp.skills.map((skill, index) => (
-                  <p key={index} style={{display: 'flex', justifyContent: 'center', gap: '4px'}}><Dot color="#1173D4"/>{skill}</p>
-                ))
-              }
+              <p key={index} style={{display: 'flex', justifyContent: 'center', gap: '4px'}}>{exp.skills}</p>
             </div>
           </div>
         ))}
@@ -94,39 +89,6 @@ function Experience({experience}) {
 }
 
 export default function Preview({general, education, experience}) {
-  general = {
-    name: 'John Doe',
-    email: 'johndoe@example.com',
-    phone: '(123) 456-7890',
-    summary: 'A brief summary of your professional background...'
-  };
-  education = [
-    {
-      name: 'University of Example',
-      degree: 'Master of Science in Computer Science',
-      start: '2018',
-      finish: '2020'
-    },
-    {
-      name: 'University of Example',
-      degree: 'Master of Science in Computer Science',
-      start: '2018',
-      finish: '2020'
-    }
-  ]
-  experience = [
-    {
-      name: 'Tech Solutions Inc.',
-      role: 'Software Engineer',
-      start: '2020',
-      finish: 'present',
-      skills: [
-        'Developed and maintained web applications using modern technologies',
-        'Collaborated with cross-function teams to deliver high qualify software',
-        'Participated in code review and provided constructive feedback'
-      ]
-    }
-  ]
   return (
     <div style={PreviewStyle}>
       <General general={general}/>
@@ -135,3 +97,10 @@ export default function Preview({general, education, experience}) {
     </div>
   );
 }
+
+
+// {
+//   exp.skills.map((skill, index) => (
+//     <p key={index} style={{display: 'flex', justifyContent: 'center', gap: '4px'}}><Dot color="#1173D4"/>{skill}</p>
+//     ))
+// }
