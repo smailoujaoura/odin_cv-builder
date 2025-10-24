@@ -6,7 +6,8 @@ import viteLogo from '/vite.svg'
 function App() {
   return (
     <>
-      
+      <Footer />
+      <Main />
     </>
   )
 }
