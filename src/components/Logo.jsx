@@ -1,27 +1,28 @@
 import { FileText } from "lucide-react";
 
-const LogoStyle = {
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-	gap: '8px'
-};
-
-const FileTextStyle = {
-	color: '#0062D1'
-};
-
-const pStyle = {
-	fontSize: '1.3rem',
-	fontWeight: 'bold',
-	color: '#0A1124'
-}
-
 export default function Logo() {
 	return (
-		<div style={LogoStyle}>
-			<FileText size={30} style={FileTextStyle}/>
-			<p style={pStyle}>CV Builder</p>
+		<div className="flex items-center justify-center gap-2">
+			<FileText size={30} className="text-blue-600"/>
+			<p className="text-[1.3rem] font-bold text-[#0A1124]">CV Builder</p>
 		</div>
 	);
 }
+
+
+// const LogoStyle = {
+// 	display: 'flex',
+// 	alignItems: 'center',
+// 	justifyContent: 'center',
+// 	gap: '8px'
+// };
+
+// const FileTextStyle = {
+// 	color: '#0062D1'
+// };
+
+// const pStyle = {
+// 	fontSize: '1.3rem',
+// 	fontWeight: 'bold',
+// 	color: '#0A1124'
+// }

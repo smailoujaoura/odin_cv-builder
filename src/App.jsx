@@ -1,16 +1,9 @@
-// import './App.css'
-import { useRef, useState } from 'react'
+import './css/App.css'
+import { useRef } from 'react'
 import Nav from './components/Footer'
 import Main from './components/Main'
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
-
-const AppStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  minHeight: '100%',
-};
 
 function App() {
   const previewRef = useRef();
@@ -31,7 +24,7 @@ function App() {
   };
 
   return (
-    <div style={AppStyle}>
+    <div className="flex flex-col min-h-screen">
       <Nav onDownload={downloadPdf} />
       <Main previewRef={previewRef} />
     </div>
@@ -39,3 +32,10 @@ function App() {
 }
 
 export default App
+
+// const AppStyle = {
+//   display: 'flex',
+//   flexDirection: 'column',
+//   justifyContent: 'space-between',
+//   minHeight: '100%',
+// };

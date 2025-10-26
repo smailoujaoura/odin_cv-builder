@@ -16,8 +16,6 @@ const FormsStyle = {
   overflowY: 'scroll',
   scrollbarWidth: 'thin',
   scrollbarColor: '#659FF8 transparent',
-  // scrollbarWidth: 'none',
-  // msOverflowStyle: 'none',
 }
 
 export default function Forms({generalsState, educationState, experiencesState}) {

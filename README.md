@@ -9,6 +9,7 @@ APP -> NAV, MAIN 			==== done
 
 that's all this one has but if we want to go further we and learn state a lot more we can introduce color changing; font cusomizations; and preview layout cusomization
 
+- installing the tailwind and using it in this react proj, converting the spaghetti css into tailwind 
 
 # React + Vite
 

@@ -1,31 +1,10 @@
 import { Dot, Phone, Mail } from "lucide-react";
 
-const PreviewStyle = {
-  backgroundColor: 'white',
-  minHeight: '100%',
-  maxHeight: '800px',
-  minWdith: '300px',
-  maxWidth: '800px',
-  flex: '1 1',
-  borderRadius: '10px',
-  padding: '20px',
-}
-
-const GeneralStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '8px',
-  color: '#0E1527',
-
-};
-
 function General({general}) {
   return (
-    <div style={GeneralStyle}>
+    <div className="flex flex-col items-center justify-center gap-0.5 text-[#0e1527]">
       <h1>{general.name}</h1>
-      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', gap: '4px', color: '#4A617E'}}>
+      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', gap: '4px', color: '#4A617E'} }>
         <Mail size={18} />
         <p>{general.email}</p>
         <Dot size={30} />
@@ -90,17 +69,10 @@ function Experience({experience}) {
 
 export default function Preview({general, education, experience}) {
   return (
-    <div style={PreviewStyle}>
+    <div className="bg-white min-h-full max-h-[800px] min-w-[300px] max-w-[800px] flex-1 grow shrink rounded-[10px] p-5">
       <General general={general}/>
       <Education education={education}/>
       <Experience experience={experience}/>
     </div>
   );
 }
-
-
-// {
-//   exp.skills.map((skill, index) => (
-//     <p key={index} style={{display: 'flex', justifyContent: 'center', gap: '4px'}}><Dot color="#1173D4"/>{skill}</p>
-//     ))
-// }
