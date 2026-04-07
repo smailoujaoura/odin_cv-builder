@@ -10,8 +10,9 @@ Live Demo: [odincvbuilders.vercel.app](https://odincvbuilders.vercel.app/)
 ## Project Showcase
 
 
-**[Watch project demo video](./docs/overview.webm)**
-<video src="./docs/overview.webm" controls muted loop style="max-width: 100%;"></video>
+**[Watch project demo video (GitHub raw)](https://github.com/smailoujaoura/odin_cv-builder/raw/main/docs/overview.webm)**
+<video src="https://github.com/smailoujaoura/odin_cv-builder/raw/main/docs/overview.webm" controls muted loop style="max-width: 100%;"></video>
+
 
 ---
 
