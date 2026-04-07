@@ -9,12 +9,6 @@ Live Demo: [odincvbuilders.vercel.app](https://odincvbuilders.vercel.app/)
 
 ## Project Showcase
 
-### Product Overview (Local Video)
-
-This project includes a local demo video in `docs/overview.webm`.
-
-GitHub README pages do not reliably render embedded local video players.  
-Use the link below to open the tracked video file directly:
 
 **[Watch project demo video](./docs/overview.webm)**
 <video src="./docs/overview.webm" controls muted loop style="max-width: 100%;"></video>
