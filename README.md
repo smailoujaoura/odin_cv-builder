@@ -17,8 +17,7 @@ GitHub README pages do not reliably render embedded local video players.
 Use the link below to open the tracked video file directly:
 
 **[Watch project demo video](./docs/overview.webm)**
-
-> The video is committed to the repository (local asset), not hosted on an external hotlink.
+<video src="./docs/overview.webm" controls muted loop style="max-width: 100%;"></video>
 
 ---
 
