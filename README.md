@@ -13,11 +13,12 @@ Live Demo: [odincvbuilders.vercel.app](https://odincvbuilders.vercel.app/)
 
 This project includes a local demo video in `docs/overview.webm`.
 
-<video src="./docs/overview.webm" controls preload="metadata" width="100%">
-  Your browser does not support HTML5 video. Open <a href="./docs/overview.webm">docs/overview.webm</a>.
-</video>
+GitHub README pages do not reliably render embedded local video players.  
+Use the link below to open the tracked video file directly:
 
-> This is a local file reference (not a hotlink), so it remains bundled with the repository.
+**[Watch project demo video](./docs/overview.webm)**
+
+> The video is committed to the repository (local asset), not hosted on an external hotlink.
 
 ---
 
